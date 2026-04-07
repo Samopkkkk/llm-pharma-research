@@ -356,7 +356,7 @@ Use the provided drug knowledge base to answer questions."""),
         """Format warnings"""
         return f"""## Warnings for {drug.name}
 
-{chr(10).join(f"- {warning}" for drug.warnings)}
+{chr(10).join(f"- {warning}" for warning in drug.warnings)}
 
 ⚠️ **Safety First**: Follow your doctor's instructions carefully."""
 
